@@ -5,7 +5,7 @@ import RefProps from "./Components/RefProps.jsx";
 import ThemeToggler from "./Components/ThemeToggler.jsx";
 
 function Navigation() {
-  const isDard = true;
+  const isDark = true;
 
   const sections = [
     { id: "basic", label: "Basic Props", icon: "🥡" },
@@ -45,11 +45,19 @@ function AppContent() {
           <p className="font-bold text-2xl mb-5">Built with Bun + Vite + React + Tailwind CSS</p>
         </header>
       </div>
+
       <div className="space-y-8">
         <div id="basic" className="scroll-mt-200">
           <BasicProps />
         </div>
       </div>
+
+       <div className="space-y-8">
+        <div id="basic" className="scroll-mt-200">
+          <ChildrenProps />
+        </div>
+      </div>
+      
     </div>
   )
 }
