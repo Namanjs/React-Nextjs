@@ -42,7 +42,7 @@ function AppContent() {
         <header className="text-white flex flex-col gap-4 items-center">
           <h1 className="text-6xl font-bold mt-6 mb-3">Reacts Props Explained</h1>
           <p className="text-2xl font-light mb-4">A comprehensive guide to understanding props in React</p>
-          <p className="font-bold text-2xl mb-15">Built with Bun + Vite + React + Tailwind CSS</p>
+          <p className="font-bold text-2xl mb-5">Built with Bun + Vite + React + Tailwind CSS</p>
         </header>
       </div>
       <div className="space-y-8">
