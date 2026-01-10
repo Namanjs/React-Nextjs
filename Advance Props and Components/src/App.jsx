@@ -53,8 +53,14 @@ function AppContent() {
       </div>
 
        <div className="space-y-8">
-        <div id="basic" className="scroll-mt-200">
+        <div className="scroll-mt-200">
           <ChildrenProps />
+        </div>
+      </div>
+
+      <div className="space-y-8">
+        <div className="scroll-mt-200">
+          <ComplexProps />
         </div>
       </div>
       
