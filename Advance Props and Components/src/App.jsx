@@ -63,6 +63,12 @@ function AppContent() {
           <ComplexProps />
         </div>
       </div>
+
+      <div className="space-y-8">
+        <div className="scroll-mt-200">
+          <RefProps />
+        </div>
+      </div>
       
     </div>
   )

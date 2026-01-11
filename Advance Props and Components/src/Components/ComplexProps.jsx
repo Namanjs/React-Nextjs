@@ -145,9 +145,6 @@ function ComplexProps() {
         </p>
 
         {/* Added a status bar to show button interactions work */}
-        <div className="mb-6 p-3 bg-gray-50 border border-gray-200 rounded-lg text-center text-sm font-mono text-gray-600">
-           Last Action: {message}
-        </div>
 
         <h2 className="font-bold text-2xl mb-5">User Profile Cards:</h2>
         
