@@ -2,7 +2,7 @@ import BasicProps from "./Components/BasicProps.jsx";
 import ChildrenProps from "./Components/ChildrenProps.jsx";
 import ComplexProps from "./Components/ComplexProps.jsx";
 import RefProps from "./Components/RefProps.jsx";
-import ThemeToggler from "./Components/ThemeToggler.jsx";
+import ThemeToggler, { ThemeProvider, useTheme } from "./Components/ThemeToggler.jsx";
 
 function Navigation() {
   const isDark = true;
@@ -34,7 +34,8 @@ function Navigation() {
 }
 
 function AppContent() {
-  const isDark = true;
+  // const isDark = true;
+  const {isDark} = useTheme();
   return (
     <div className="min-h-screen bg-gray-800">
       <Navigation />
@@ -52,7 +53,7 @@ function AppContent() {
         </div>
       </div>
 
-       <div className="space-y-8">
+      <div className="space-y-8">
         <div className="scroll-mt-200">
           <ChildrenProps />
         </div>
@@ -69,7 +70,7 @@ function AppContent() {
           <RefProps />
         </div>
       </div>
-      
+
     </div>
   )
 }
@@ -77,7 +78,9 @@ function AppContent() {
 function App() {
   return (
     <>
-      <AppContent />
+      <ThemeProvider>
+        <AppContent />
+      </ThemeProvider>
     </>
   )
 }
